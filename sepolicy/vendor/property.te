@@ -5,4 +5,4 @@ system_public_prop(dirac_prop)
 system_public_prop(vendor_fp_prop)
 
 # Power HAL
-type power_prop, property_type;
+type vendor_power_prop, property_type;
