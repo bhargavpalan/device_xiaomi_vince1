@@ -300,6 +300,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
