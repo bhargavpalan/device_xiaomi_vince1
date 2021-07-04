@@ -333,7 +333,10 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    libqti-perfd-client
+    libqti-perfd-client \
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor
 
 # Power
 PRODUCT_PACKAGES += \
