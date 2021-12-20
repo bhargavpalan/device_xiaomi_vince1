@@ -735,8 +735,8 @@ vendor/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
 # Ipacm - from daisy
 vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 
-# IRQ Balance - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+# IRQ Balance - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/bin/msm_irqbalance|e5706bc0acab394b53fafdc1d7f342f69c6f5649
 vendor/etc/msm_irqbalance.conf|f7d3ff4c1951cc88a9a5f1ac03819e249d129619
 
 # Keystore - from daisy
