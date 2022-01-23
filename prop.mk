@@ -243,6 +243,10 @@ service.qti.ims.enabled=1
 PRODUCT_PROPERTY_OVERRIDES += \
     spectrum.support=1
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
