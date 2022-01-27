@@ -1,17 +1,5 @@
-# CPUboost
-system_public_prop(cpuboost_prop)
-
-# Dirac
-system_public_prop(dirac_prop)
-
 # Fingerprint
 system_public_prop(vendor_fp_prop)
-
-# GPUboost
-system_public_prop(gpuboost_prop)
-
-# Spectrum
-system_public_prop(spectrum_prop)
 
 # Power HAL
 system_public_prop(power_prop)
