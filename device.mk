@@ -296,7 +296,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/msm8953-common/prop.mk
+-include device/xiaomi/vince/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -438,4 +438,4 @@ PRODUCT_PACKAGES += \
     init.spectrum.sh
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)

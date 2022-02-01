@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-VENDOR_PATH := device/xiaomi/msm8953-common
+DEVICE_PATH := device/xiaomi/vince
 
 # Architecture
 TARGET_ARCH := arm64
@@ -41,7 +41,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+TARGET_KERNEL_SOURCE := kernel/xiaomi/vince
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 TARGET_KERNEL_CLANG_COMPILE := true
 
@@ -76,7 +76,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8953
 TARGET_NO_BOOTLOADER := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
@@ -100,17 +100,17 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # HW crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_msm8953
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_msm8953
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 
 # Partitions
@@ -138,13 +138,13 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.recovery.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
@@ -165,4 +165,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+include vendor/xiaomi/vince/BoardConfigVendor.mk
