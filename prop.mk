@@ -108,6 +108,8 @@ persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
+persist.vendor.camera.CDS=off \
+persist.vendor.camera.video.CDS=off \
 vidc.enc.dcvs.extra-buff-count=2
 
 # Charger
