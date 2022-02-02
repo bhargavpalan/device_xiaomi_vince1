@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libstdc++.vendor \
     libshims_libui \
+    libdng_sdk.vendor \
     Snap
 
 PRODUCT_COPY_FILES += \
