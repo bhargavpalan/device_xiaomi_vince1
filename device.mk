@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
     libstdc++.vendor \
+    libshims_libui \
     Snap
 
 # Consumer IR
