@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
     libstdc++.vendor \
-    libshims_libui \
     libdng_sdk.vendor \
     Snap
 
