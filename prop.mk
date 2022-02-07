@@ -129,6 +129,7 @@ debug.cpurend.vsync=false \
 debug.egl.hw=1 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
+debug.hwui.use_buffer_age=false \
 debug.mdpcomp.logs=0 \
 debug.performance.tuning=1 \
 debug.sf.enable_gl_backpressure=1 \
