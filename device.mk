@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
-    libtinycompress
+    libtinycompress \
+    android.hardware.bluetooth@1.0.vendor
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -129,6 +130,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    android.frameworks.displayservice@1.0.vendor \
     camera.msm8953 \
     libmm-qcamera \
     libstdc++.vendor \
@@ -139,6 +141,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -163,7 +170,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -182,7 +194,13 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libwifi-hal-ctrl
+    libwifi-hal-ctrl \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@1.2.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@3.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -304,7 +322,10 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock
+    android.hardware.power.stats@1.0-service.mock \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -351,7 +372,15 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
+    telephony-ext \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
