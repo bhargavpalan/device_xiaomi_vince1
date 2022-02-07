@@ -187,6 +187,13 @@ ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
 
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.ims.disableADBLogs=1 \
+persist.vendor.ims.disableIMSLogs=1 \
+persist.vendor.ims.disableDebugLogs=1 \
+persist.vendor.ims.disableQXDMLogs=1
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
