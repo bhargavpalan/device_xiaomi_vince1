@@ -1,22 +1,4 @@
 [
-{
-    "repository": "PixelExperience/hardware_qcom-caf_msm8996-r_display",
-    "target_path": "hardware/qcom-caf/msm8996/display",
-    "branch": "twelve",
-    "remote": "github"
-},
-  {
-    "repository": "PixelExperience/hardware_qcom-caf_msm8996-r_media",
-    "target_path": "hardware/qcom-caf/msm8996/media",
-    "branch": "twelve",
-    "remote": "github"
- },
-  {
-    "repository": "PixelExperience/hardware_qcom-caf_msm8996-r_audio",
-    "target_path": "hardware/qcom-caf/msm8996/audio",
-    "branch": "twelve",
-    "remote": "github"
- },
   {
     "remote":       "github",
     "repository":   "kdrag0n/proton-clang",
