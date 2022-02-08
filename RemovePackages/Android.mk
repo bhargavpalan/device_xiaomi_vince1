@@ -18,6 +18,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     GoogleTTS \
     Maps \
     MyVerizonServices \
+    NexusLauncherRelease \
     OBDM_Permissions \
     obdm_stub \
     OdadPrebuilt \
