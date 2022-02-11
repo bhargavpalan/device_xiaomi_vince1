@@ -15,6 +15,7 @@ persist.vendor.audio.hw.binder.size_kbyte=1024 \
 ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=6 \
 ro.vendor.audio.sdk.fluencetype=fluence \
+ro.audio.soundfx.dirac=true
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
 vendor.audio.hal.boot.timeout.ms=20000 \
