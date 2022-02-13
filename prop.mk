@@ -148,6 +148,7 @@ ro.hardware.vulkan=adreno \
 ro.hardware.egl=adreno \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
+vendor.display.disable_scaler=1
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
