@@ -92,7 +92,6 @@ ro.qualcomm.bt.hci_transport=smd
 ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
-debug.sf.disable_backpressure=1
 
 # Bpf
 PRODUCT_PROPERTY_OVERRIDES += \
