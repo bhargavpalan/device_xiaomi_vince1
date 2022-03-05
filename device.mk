@@ -349,6 +349,7 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -411,6 +412,9 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+QCOM_SOONG_NAMESPACE := \
+    $(LOCAL_PATH)/qcom-caf
 
 # Thermal
 PRODUCT_COPY_FILES += \
