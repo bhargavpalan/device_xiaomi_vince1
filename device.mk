@@ -165,8 +165,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libqdMetaData.vendor \
-    libgenlock \
-    libtinyxml
+    libgenlock
 
 # DRM
 PRODUCT_PACKAGES += \
