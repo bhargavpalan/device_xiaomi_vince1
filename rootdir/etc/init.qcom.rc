@@ -274,6 +274,14 @@ on boot
     chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
     chmod 0660 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
 
+    # Sound Control
+    chown system system /sys/kernel/sound_control/earpiece_gain
+    chmod 0660 /sys/kernel/sound_control/earpiece_gain
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chmod 0660 /sys/kernel/sound_control/headphone_gain
+    chown system system /sys/kernel/sound_control/mic_gain
+    chmod 0660 /sys/kernel/sound_control/mic_gain
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
