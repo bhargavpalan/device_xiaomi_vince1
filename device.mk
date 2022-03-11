@@ -177,7 +177,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.0.vendor
+    android.hardware.drm@1.0.vendor \
+    libdrm \
+    libdrm.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -387,7 +389,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.0.vendor \
+    libloc_net_iface \
+    libloc_net_iface.vendor
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
