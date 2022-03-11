@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libqdMetaData.vendor \
-    libgenlock
+    libgenlock \
+    vendor.display.config@1.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
