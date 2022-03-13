@@ -137,7 +137,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     camera.msm8953 \
     libmm-qcamera \
-    libstdc++.vendor \
     libdng_sdk.vendor \
     Snap
 

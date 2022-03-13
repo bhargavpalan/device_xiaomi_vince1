@@ -142,6 +142,8 @@ vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera_sw_tnr.so
+vendor/lib/libstdc++.so
+vendor/lib64/libstdc++.so
 
 # Camera-actuators
 vendor/lib/libactuator_vince_dw9714v_ofilm.so
