@@ -356,26 +356,14 @@
     {
       "PowerHint": "CAMERA_STREAMING",
       "Node": "CPUBigClusterMaxFreq",
-      "ValueIndex": 0,
-      "Duration": 1000
+      "Duration": 0,
+      "Value": "2246400"
     },
     {
       "PowerHint": "CAMERA_STREAMING",
-      "Node": "CPUBigClusterMinFreq",
-      "ValueIndex": 0,
-      "Duration": 1000
-    },
-    {
-      "PowerHint": "CAMERA_STREAMING",
-      "Node": "CPULittleClusterMinFreq",
-      "ValueIndex": 0,
-      "Duration": 1000
-    },
-    {
-      "PowerHint": "CAMERA_STREAMING",
-      "Node": "PMQoSCpuDmaLatency",
-      "ValueIndex": 0,
-      "Duration": 1000
+      "Node": "SchedFeatures",
+      "Duration": 0,
+      "Value": "EAS_USE_NEED_IDLE
     },
     {
       "PowerHint": "AUDIO_STREAMING",
