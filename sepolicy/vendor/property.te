@@ -12,3 +12,6 @@ system_public_prop(gpuboost_prop)
 
 # Spectrum
 system_public_prop(spectrum_prop)
+
+# Power HAL
+system_public_prop(power_prop)
