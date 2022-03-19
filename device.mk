@@ -367,7 +367,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.performance_level.rc
+    init.performance_level.rc \
+    init.recovery.qcom.rc \
+    init.vince.rc
 
 PRODUCT_PACKAGES += \
     init.qcom.sh \
