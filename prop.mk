@@ -241,37 +241,31 @@ ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
 persist.vendor.data.mode=concurrent
 
-# Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.rild.nitz_plmn="" \
-persist.rild.nitz_long_ons_0="" \
-persist.rild.nitz_long_ons_1="" \
-persist.rild.nitz_long_ons_2="" \
-persist.rild.nitz_long_ons_3="" \
-persist.rild.nitz_short_ons_0="" \
-persist.rild.nitz_short_ons_1="" \
-persist.rild.nitz_short_ons_2="" \
-persist.rild.nitz_short_ons_3=""
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-DEVICE_PROVISIONED=1 \
+persist.radio.multisim.config=dsds \
+persist.vendor.radio.add_power_save=1 \
+persist.vendor.radio.apm_sim_not_pwdn=1 \
+persist.vendor.radio.custom_ecc=1 \
+persist.vendor.radio.hw_mbn_update=0 \
+persist.vendor.radio.procedure_bytes=SKIP \
+persist.vendor.radio.rat_on=combine \
+persist.vendor.radio.sib16_support=1 \
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+
+# Radio (IMS)
+PRODUCT_PROPERTY_OVERRIDES += \
+service.qti.ims.enabled=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
-persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.radio.multisim.config=dsds \
-persist.vendor.radio.custom_ecc=1 \
-persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
-persist.vendor.data.iwlan.enable=true \
-ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-ro.telephony.iwlan_operation_mode=legacy \
-ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,20 \
-service.qti.ims.enabled=1
+persist.vendor.ims.disableIMSLogs=1 \
+persist.vendor.ims.disableADBLogs=1 \
+persist.vendor.ims.disableDebugDataPathLogs=1 \
+persist.vendor.ims.disableDebugLogs=1 \
+persist.vendor.ims.disableSigHandler=1 \
+persist.vendor.ims.disableQXDMLogs=1
 
 # Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -297,6 +291,25 @@ debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_gl_app_phase_offset_ns=15000000
 debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
+
+# Telephony
+PRODUCT_PROPERTY_OVERRIDES += \
+DEVICE_PROVISIONED=1 \
+persist.rild.nitz_long_ons_0= \
+persist.rild.nitz_long_ons_1= \
+persist.rild.nitz_long_ons_2= \
+persist.rild.nitz_long_ons_3= \
+persist.rild.nitz_plmn= \
+persist.rild.nitz_short_ons_0= \
+persist.rild.nitz_short_ons_1= \
+persist.rild.nitz_short_ons_2= \
+persist.rild.nitz_short_ons_3= \
+rild.libargs=-d /dev/smd0 \
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+ril.subscription.types=NV,RUIM \
+ro.telephony.call_ring.multiple=false \
+ro.telephony.default_network=22,22 \
+ro.telephony.use_old_mnc_mcc_format=true \
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
