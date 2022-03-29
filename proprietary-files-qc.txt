@@ -735,6 +735,10 @@ vendor/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
 # Ipacm - from daisy
 vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 
+# IRQ Balance - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+vendor/etc/msm_irqbalance.conf|f7d3ff4c1951cc88a9a5f1ac03819e249d129619
+
 # Keystore - from daisy
 vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
 vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
@@ -804,49 +808,6 @@ vendor/lib64/libOmxApeDecSw.so|cd6874e2be4bbddc74e70bad8acebc5a9dbcb355
 vendor/lib64/libOmxEvrcDec.so|67da9d405b33c9a1058ee2bcb12ea489f37d5961
 vendor/lib64/libOmxQcelp13Dec.so|842f2285c1eb76827a3b8bd0b574aee86ad1d1bd
 vendor/lib64/libOmxWmaDec.so|7e5dab018bbab16566315dcc61682a196a25f0ba
-
-# Perf - from LA.UM.8.6.2.r1-08600-89xx.0
-system/lib/libqti-at.so:system_ext/lib/libqti-at.so
-system/lib/libqti-perfd-client_system.so:system_ext/lib/libqti-perfd-client_system.so
-system/lib/libqti_performance.so:system_ext/lib/libqti_performance.so
-system/lib64/libqti-at.so:system_ext/lib64/libqti-at.so
-system/lib64/libqti-perfd-client_system.so:system_ext/lib64/libqti-perfd-client_system.so
-system/lib64/libqti_performance.so:system_ext/lib64/libqti_performance.so
-vendor/bin/hw/vendor.qti.hardware.perf@2.1-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/libskewknob.so
-
-# Perf (IOP) - from LA.UM.8.6.2.r1-08600-89xx.0
-system/lib/libqti-iopd-client_system.so:system_ext/lib/libqti-iopd-client_system.so
-system/lib64/libqti-iopd-client_system.so:system_ext/lib64/libqti-iopd-client_system.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Peripheral manager - from daisy
 vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7

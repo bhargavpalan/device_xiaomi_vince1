@@ -213,7 +213,6 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bservice_age=5000
 ro.vendor.qti.sys.fw.bservice_limit=5
 ro.vendor.qti.sys.fw.bservice_enable=true
