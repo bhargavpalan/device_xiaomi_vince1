@@ -9,16 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common cherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common blissOS stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
-CHERISH_VANILLA := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := cherish_vince
+PRODUCT_NAME := bliss_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
@@ -32,8 +31,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys"
-
-# Cherish Official Tag
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=GamingGhost

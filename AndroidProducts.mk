@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_vince.mk
+    $(LOCAL_DIR)/bliss_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_vince-user \
-    cherish_vince-userdebug \
-    cherish_vince-eng
+    bliss_vince-user \
+    bliss_vince-userdebug \
+    bliss_vince-eng
