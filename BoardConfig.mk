@@ -131,9 +131,6 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vince
 TARGET_RECOVERY_DEVICE_MODULES := libinit_vince
 
-# Enable stats logging in LMKD
-TARGET_LMKD_STATS_LOG := true
-
 # Media
 USE_DEVICE_SPECIFIC_MEDIA := true
 DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
