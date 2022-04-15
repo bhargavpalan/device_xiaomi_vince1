@@ -737,7 +737,7 @@ vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 
 # IRQ Balance - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/msm_irqbalance|e5706bc0acab394b53fafdc1d7f342f69c6f5649
-vendor/etc/msm_irqbalance.conf|f7d3ff4c1951cc88a9a5f1ac03819e249d129619
+vendor/etc/msm_irqbalance.conf|eb0ac01aad0a1f4d5e1a10d1296f5cc66f395a6b
 
 # Keystore - from daisy
 vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
