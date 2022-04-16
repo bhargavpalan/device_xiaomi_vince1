@@ -31,6 +31,11 @@
         <fqname>@1.0::IGoodixBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>com.qualcomm.qti.uceservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IBluetoothHci/default</fqname>
