@@ -334,17 +334,11 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@1.0.vendor \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor
-
-# Perf
-PRODUCT_PACKAGES += \
     libqti-perfd-client
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.vince-libperfmgr
+    android.hardware.power-service.vince-libperfmgr \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor
